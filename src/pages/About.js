@@ -8,9 +8,12 @@ export default function About(props) {
 		setDate(date);
 	};
 
+	const onClickDay = day => {
+		console.log('hello');
+	};
 	return (
 		<div>
-			<Calendar  onChange={onChange} value={date} />
+			<Calendar onChange={onChange} value={date} />
 			<div>{date.toString()}</div>
 		</div>
 	);
